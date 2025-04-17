@@ -1,0 +1,33 @@
+Summary:
+
+Patch Intelligence — project[Problem Statement]
+
+Project Description:
+
+This project analyzes software patch versions of the python-requests library from PyPI and links them to known vulnerabilities (CVEs) from the National Vulnerability Database (NVD). Patch version data was collected using web scraping, and CVEs were mapped manually based on NVD descriptions.
+
+Key Findings:
+
+✅CVE-2014-1829 and CVE-2014-1830 affect versions before 2.3.0.
+
+✅CVE-2018-18074 was fixed in version 2.20.0.
+
+✅The related_cves column in the CSV shows which versions are affected.
+
+Tools Used:
+
+✅Python (BeautifulSoup, requests, pandas)
+
+✅PyPI.org
+
+✅NVD API
+
+✅Microsoft Excel
+
+Files Submitted:
+
+✅Patch_Intelligence_Report.csv — contains patch versions and related CVEs
+
+✅Patch_Intelligence_Summary.txt — this document
+
+This basic system can help identify vulnerable versions and assist in automated patch decision-making.
